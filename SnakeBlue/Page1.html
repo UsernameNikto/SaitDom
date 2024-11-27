@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeBlue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Page.css">
+    <link rel="stylesheet" href="Page21.css">
+</head>
+<body>
+    <div class="site">
+        <div class="page_static">
+            <div class="page">
+                <div class="block_1">
+                    <div class="block_button">
+                        <a class="button_2" href="Page0.html">
+                            <p class="text_4">На главную</p>
+                        </a>
+                    </div>
+                    <div class="block_button">
+                        <a class="button_2" href="Page2.html">
+                            <p class="text_4">Регистрация</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="block_3">
+                    <div class="block_3_1" id="ep_1">
+                        <div class="fon_img">
+                            <img class="img_10" src="Img/Exclamation point.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_2">
+                    <div class="block_2_1">
+                        <div class="block_2_1_1">
+                            <p class="text_9">Логин</p>
+                            <input name="login" class="input" type="text">
+                        </div>
+                        <div class="block_2_1_1">
+                            <p class="text_9">Пароль</p>
+                            <input name="password" class="input" type="password">
+                        </div>
+                    </div>
+                    <div class="block_2_2">
+                        <div class="block_button">
+                            <div class="button_5">
+                                <p class="text_3" id="ep_0">Войти</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.addEventListener('click', e=> {
+            e.stopImmediatePropagation();
+        })
+        ep_1.style.display = 'none';
+        ep_0.addEventListener('click', e=>{
+            ep_1.style.display = 'block';
+            setTimeout(()=>{
+                ep_1.style.display = 'none';
+            },1000);
+        })
+    </script>
+</body>
+</html>
